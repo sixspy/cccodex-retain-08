@@ -85,6 +85,28 @@ button.secondary {
   border: 1px solid var(--line);
 }
 .err { color: var(--bad); margin-top: 10px; font-size: 13px; }
+.flash {
+  min-height: 20px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+.flash.ok { color: var(--ok); }
+.flash.bad { color: var(--bad); }
+button.disabled-btn,
+button:disabled {
+  background: #3a4356;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  cursor: not-allowed;
+  font-weight: 500;
+}
+.toolbar .field.wide { min-width: 260px; }
+.grace-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.grace-actions button { padding: 6px 10px; font-size: 12px; font-weight: 500; }
 
 .topbar {
   display: flex;
